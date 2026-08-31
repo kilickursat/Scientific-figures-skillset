@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "target": "/mnt/data/scientific-visualization-skills/examples/calibration-figure",
+  "manifest": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/figure_manifest.json",
+  "profile": "nature",
+  "counts": {
+    "error": 0,
+    "warning": 0,
+    "info": 15
+  },
+  "findings": [
+    {
+      "level": "info",
+      "code": "manifest.orientation",
+      "message": "Orientation `landscape` matches physical dimensions."
+    },
+    {
+      "level": "info",
+      "code": "caption.present",
+      "message": "caption_file is present and non-empty.",
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/caption.md"
+    },
+    {
+      "level": "info",
+      "code": "alt-text.present",
+      "message": "alt_text_file is present and non-empty.",
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/alt-text.md"
+    },
+    {
+      "level": "info",
+      "code": "manual-qa.approved",
+      "message": "Manual QA is marked as passed and contains no unchecked boxes.",
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/qa/MANUAL_QA.md"
+    },
+    {
+      "level": "info",
+      "code": "source.hash",
+      "message": "Source SHA-256 matches the manifest.",
+      "path": "src/plot.py"
+    },
+    {
+      "level": "info",
+      "code": "source.hash",
+      "message": "Source SHA-256 matches the manifest.",
+      "path": "figure_request.json"
+    },
+    {
+      "level": "info",
+      "code": "output.hash",
+      "message": "Output SHA-256 matches the manifest.",
+      "path": "output/FigDemo_Calibration_landscape.pdf"
+    },
+    {
+      "level": "info",
+      "code": "pdf.page-size",
+      "message": "PDF page size matches the manifest within 1 mm.",
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape.pdf"
+    },
+    {
+      "level": "info",
+      "code": "pdf.fonts-embedded",
+      "message": "Detected 2 embedded font resource(s).",
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape.pdf"
+    },
+    {
+      "level": "info",
+      "code": "output.hash",
+      "message": "Output SHA-256 matches the manifest.",
+      "path": "output/FigDemo_Calibration_landscape.svg"
+    },
+    {
+      "level": "info",
+      "code": "svg.physical-size",
+      "message": "SVG physical size matches the manifest within 1 mm.",
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape.svg"
+    },
+    {
+      "level": "info",
+      "code": "output.hash",
+      "message": "Output SHA-256 matches the manifest.",
+      "path": "output/FigDemo_Calibration_landscape_600dpi.png"
+    },
+    {
+      "level": "info",
+      "code": "raster.effective-dpi",
+      "message": "Effective raster resolution passes at 599.9 DPI.",
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape_600dpi.png"
+    },
+    {
+      "level": "info",
+      "code": "output.hash",
+      "message": "Output SHA-256 matches the manifest.",
+      "path": "output/FigDemo_Calibration_landscape_600dpi.tiff"
+    },
+    {
+      "level": "info",
+      "code": "raster.effective-dpi",
+      "message": "Effective raster resolution passes at 599.9 DPI.",
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape_600dpi.tiff"
+    }
+  ],
+  "inspections": [
+    {
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape.pdf",
+      "kind": "pdf",
+      "page_count": 1,
+      "page_width_mm": 183.0,
+      "page_height_mm": 100.0,
+      "fonts": [
+        {
+          "base_font": "/FRZNSF+LiberationSans-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/FRZNSF+LiberationSans",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape.svg",
+      "kind": "svg",
+      "viewBox": "0 0 518.740157 283.464567",
+      "width": "183mm",
+      "height": "100mm",
+      "text_elements": 38,
+      "image_elements": 0,
+      "gradient_elements": 0,
+      "filter_elements": 0,
+      "external_hrefs": []
+    },
+    {
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape_600dpi.png",
+      "kind": "raster",
+      "role": "archive-raster",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width_px": 4322,
+      "height_px": 2362,
+      "effective_dpi_x": 599.884,
+      "effective_dpi_y": 599.948,
+      "metadata_dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "/mnt/data/scientific-visualization-skills/examples/calibration-figure/output/FigDemo_Calibration_landscape_600dpi.tiff",
+      "kind": "raster",
+      "role": "archive-raster",
+      "format": "TIFF",
+      "mode": "RGBA",
+      "width_px": 4322,
+      "height_px": 2362,
+      "effective_dpi_x": 599.884,
+      "effective_dpi_y": 599.948,
+      "metadata_dpi": [
+        600.0,
+        600.0
+      ]
+    }
+  ],
+  "limitations": [
+    "Automated QC cannot determine whether the scientific question is appropriate or the statistics are honest.",
+    "Automated QC cannot reliably detect label overlap, visual crowding, color-vision failures, or metadata-preserving upsampling; manual rendered-output review is mandatory.",
+    "Publisher profiles are starting points; exact target-journal instructions must be checked before submission."
+  ]
+}

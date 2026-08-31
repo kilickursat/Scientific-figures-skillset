@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this skill in research or figure-production workflows, please cite the software."
+title: "Scientific Visualization Skills for Claude and Codex"
+type: software
+authors:
+  - family-names: "Kilic"
+    given-names: "Kursat"
+version: 0.1.0
+date-released: 2026-08-31
+license: Apache-2.0
+repository-code: "https://github.com/OWNER/scientific-visualization-skills"
+abstract: "An integrity-first portable Agent Skill for reproducible, accessible, vector-first, native 600-DPI scientific figures and journal-oriented production QA."
+keywords:
+  - scientific visualization
+  - publication figures
+  - reproducible research
+  - agent skills
+  - Claude Code
+  - OpenAI Codex
+  - data visualization

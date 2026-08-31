@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "figure_id": "FigDemo_Calibration",
+  "task": "create",
+  "figure_family": "quantitative-multipanel",
+  "scientific_question": "For a deterministic synthetic calibration dataset, how closely do predictions agree with observed values and do residuals show systematic bias?",
+  "target_journal": "nature",
+  "target_journal_detail": "Nature-family portrait production smoke test",
+  "submission_stage": "archive",
+  "orientation": "portrait",
+  "width_class": "single",
+  "height_mm": 160,
+  "archive_raster_dpi": 600,
+  "claims_allowed": [
+    "The portrait package demonstrates scientifically equivalent reflow of the same synthetic figure.",
+    "Displayed metrics are deterministic calculations from synthetic values."
+  ],
+  "evidence_sources": [
+    {
+      "path_or_uri": "src/plot.py",
+      "role": "deterministic synthetic generator and plotting source",
+      "provenance_class": "modelled",
+      "sha256": "5a5aa31a3ad9ea7f4be40c3031269aeb0efbd59ec0584d2ac0c3485db749a82e",
+      "notes": "Synthetic software test, not an observation."
+    }
+  ],
+  "allowed_transformations": [
+    "vertical panel reflow",
+    "vector export",
+    "native 600-DPI raster export"
+  ],
+  "prohibited_transformations": [
+    "change values or mappings",
+    "present synthetic values as observations",
+    "remove disclosure",
+    "use generative imagery",
+    "metadata-only DPI relabelling"
+  ],
+  "panels": [
+    {
+      "id": "a",
+      "question": "How do synthetic predictions compare with synthetic observed values?",
+      "encoding": "paired scatter, identity reference, and least-squares fit",
+      "units": "arbitrary demonstration unit",
+      "provenance_class": "modelled",
+      "reviewer_risk": "Could be mistaken for empirical calibration without disclosure."
+    },
+    {
+      "id": "b",
+      "question": "Do residuals show mean bias across observed magnitude?",
+      "encoding": "residual scatter with zero reference and RMSE/bias text",
+      "units": "arbitrary demonstration unit",
+      "provenance_class": "derived",
+      "reviewer_risk": "Metrics must remain tied to the same synthetic pairs."
+    }
+  ],
+  "unresolved_evidence": [],
+  "notes": "Portrait counterpart to the landscape smoke test."
+}

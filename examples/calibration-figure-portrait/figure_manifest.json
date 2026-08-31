@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "figure_id": "FigDemo_Calibration",
+  "scientific_question": "For a deterministic synthetic calibration dataset, how closely do predictions agree with observed values and do residuals show systematic bias?",
+  "synthetic_example": true,
+  "target_journal": "nature",
+  "target_journal_detail": "Nature-family portrait production smoke test",
+  "journal_profile_verified_on": "2026-08-31",
+  "journal_verification_status": "official-family-guidance-reviewed",
+  "submission_stage": "archive",
+  "orientation": "portrait",
+  "width_class": "single",
+  "width_mm": 89,
+  "height_mm": 160,
+  "archive_raster_dpi": 600,
+  "color_space": "RGB",
+  "software": [
+    {
+      "name": "Matplotlib",
+      "version": "3.10.8"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.3.5"
+    },
+    {
+      "name": "Pillow",
+      "version": "12.3.0"
+    }
+  ],
+  "transformations": [
+    "Same deterministic synthetic generator as landscape example.",
+    "Panels reflowed vertically without changing data or encoding.",
+    "No image enhancement or generative processing."
+  ],
+  "panel_provenance": [
+    {
+      "panel_id": "a",
+      "provenance_class": "modelled",
+      "source": "src/plot.py::synthetic_demo",
+      "notes": "Synthetic rendering test."
+    },
+    {
+      "panel_id": "b",
+      "provenance_class": "derived",
+      "source": "src/plot.py::build_figure",
+      "notes": "Derived from the same synthetic pairs."
+    }
+  ],
+  "source_files": [
+    {
+      "path": "src/plot.py",
+      "sha256": "5a5aa31a3ad9ea7f4be40c3031269aeb0efbd59ec0584d2ac0c3485db749a82e",
+      "bytes": 7925
+    },
+    {
+      "path": "figure_request.json",
+      "sha256": "8c7d36518d837053c63ad615197beb5c59a10e2160dde88a74952db08c8a75c9",
+      "bytes": 2254
+    }
+  ],
+  "outputs": [
+    {
+      "path": "output/FigDemo_Calibration_portrait.pdf",
+      "format": "PDF",
+      "role": "vector-master",
+      "sha256": "f21b228d925b8783576b733a98d18870904a397b3da4a9e0ad3262de23efe1a5",
+      "bytes": 23662,
+      "dpi": null,
+      "width_px": null,
+      "height_px": null
+    },
+    {
+      "path": "output/FigDemo_Calibration_portrait.svg",
+      "format": "SVG",
+      "role": "vector-master",
+      "sha256": "66d0095a476ab1d465b496b75a376ff7eb9b263485e6fe31fd27f40badbb5f3f",
+      "bytes": 34111,
+      "dpi": null,
+      "width_px": null,
+      "height_px": null
+    },
+    {
+      "path": "output/FigDemo_Calibration_portrait_600dpi.png",
+      "format": "PNG",
+      "role": "archive-raster",
+      "sha256": "3e14e2e8884286d9fa3af75128259de61da26a469a8ecabeca3d7d46c6f2b777",
+      "bytes": 393174,
+      "dpi": 599.9988,
+      "width_px": 2102,
+      "height_px": 3779
+    },
+    {
+      "path": "output/FigDemo_Calibration_portrait_600dpi.tiff",
+      "format": "TIFF",
+      "role": "archive-raster",
+      "sha256": "7b865d7a861c0b5d4b78ce8affd1e470d12fd0e0b930ce4e26d2571aae322467",
+      "bytes": 537846,
+      "dpi": 600.0,
+      "width_px": 2102,
+      "height_px": 3779
+    }
+  ],
+  "caption_file": "caption.md",
+  "alt_text_file": "alt-text.md",
+  "manual_qa_file": "qa/MANUAL_QA.md",
+  "unresolved_evidence": [],
+  "limitations": [
+    "All values are synthetic.",
+    "This verifies portrait reflow and production properties, not model validity."
+  ]
+}
